@@ -2,5 +2,5 @@
 
 
 body {
-    background-image: image("backgroundImage.jpeg");
+    background-image: url("backgroundImage.jpeg");
 }
