@@ -1,0 +1,80 @@
+{
+  "anime": "One Piece",
+  "characters": [
+    {
+      "Id": 1,
+      "name": "Monkey D. Luffy",
+      "gender": "Male",
+      "affiliation": "Straw Hat Pirates",
+      "devilFruit": {
+        "name": "Hito Hito No Mi, Model: Nika",
+        "type": "Mythical Zoan"
+      },
+      "haki": ["Armament", "Observation", "Conqueror"],
+      "bounty": 3000000000,
+      "height": 174,
+      "origin": "East Blue",
+      "arc": "Romance Dawn"
+    },
+    {
+      "Id": 2,
+      "name": "Roronoa Zoro",
+      "gender": "Male",
+      "affiliation": "Straw Hat Pirates",
+      "devilFruit": null,
+      "haki": ["Armament", "Observation", "Conqueror"],
+      "bounty": 1111000000,
+      "height": 181,
+      "origin": "East Blue",
+      "arc": "Romance Dawn"
+    },
+    {
+      "Id": 3,
+      "name": "Nami",
+      "gender": "Female",
+      "origin": "East Blue",
+      "haki": [],
+      "devilFruit": null,
+      "bounty": 366000000,
+      "height": 170,
+      "affiliation": "Straw Hat Pirates"
+    },
+    {
+      "Id": 4,
+      "name": "Sanji",
+      "gender": "Male",
+      "origin": "North Blue",
+      "haki": ["Armament", "Observation"],
+      "devilFruit": null,
+      "bounty": 1032000000,
+      "height": 180,
+      "affiliation": "Straw Hat Pirates"
+    },
+    {
+      "Id": 5,
+      "name": "Tony Tony Chopper",
+      "gender": "Male",
+      "origin": "Grand Line",
+      "haki": [],
+      "devilFruit": {
+        "name": "Hito Hito No Mi",
+        "type": "Zoan"
+      },
+      "bounty": 1000,
+      "affiliation": "Straw Hat Pirates"
+    },
+    {
+      "Id": 6,
+      "name": "Nico Robin",
+      "gender": "Female",
+      "origin": "West Blue",
+      "haki": [],
+      "devilFruit": {
+        "name": "Hana Hana No Mi",
+        "type": "Paramecia"
+      },
+      "bounty": 79000000,
+      "affiliation": "Straw Hat Pirates"
+    }
+  ]
+}
