@@ -6,7 +6,7 @@
 }
 html, body {
   height: 100%;
-  font-family: 'Segoe UI', sans-serif;
+  font-family: 'Bangers', cursive;
   overflow-x: hidden;
 }
 
@@ -41,8 +41,8 @@ html, body {
   font-weight: bold;
 }
 .title-img {
-  max-width: 90%;
-  height: auto;
+  width: 600px; /* Set desired width */
+  height: auto; /* Maintains aspect ratio */
   margin-bottom: 1rem;
 }
 .subtitle {
@@ -61,7 +61,9 @@ html, body {
 }
 .mode {
   margin: 1rem 0;
+  height: 80px;
   font-size: 1.1rem;
+  background: #636363;
 }
 .mode strong {
   display: block;
@@ -70,6 +72,11 @@ html, body {
 .mode span {
   font-size: 0.9rem;
   opacity: 0.8;
+}
+.modes a.mode {
+  text-decoration: none;
+  color: inherit;
+  display: block;
 }
 
 /* Footer Panel */

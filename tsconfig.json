@@ -1,0 +1,10 @@
+{
+  "compilerOptions": {
+    "target": "ES2015",          // or "ES6" (same)
+    "lib": ["ES2015", "DOM"],    // includes Promise, Array.find, and DOM APIs
+    "module": "ESNext",          // or your module system
+    "strict": true,              // optional, but recommended
+    "esModuleInterop": true,     // optional, for import compatibility
+    "skipLibCheck": true         // optional, speeds up build
+  }
+}

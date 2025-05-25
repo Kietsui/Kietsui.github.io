@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link href="https://fonts.googleapis.com/css2?family=Bangers&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="classic.css" />
+  <title>Onepiecedle</title>
+</head>
+<body>
+  <img class="bgimg" src="https://w.wallhaven.cc/full/5g/wallhaven-5g22q5.png" alt="">
+
+  <div class="container">
+    <header>
+      <img class="title-img" src="assets/opTitleText.png" alt="Onepiecedle" />
+      <div class="icon-row">
+        <img src="assets/icon1.png" />
+        <img src="assets/icon2.png" />
+        <img src="assets/icon3.png" />
+        <img src="assets/icon4.png" />
+      </div>
+    </header>
+
+    <div class="input-area">
+  <input id="guess-input" type="text" placeholder="Guess a character..." />
+  <button id="submit-guess">Guess</button>
+</div>
+
+<div class="grid-header">
+  <div class="cell">Name</div>
+  <div class="cell">Gender</div>
+  <div class="cell">Affiliation</div>
+  <div class="cell">Devil Fruit</div>
+  <div class="cell">Haki</div>
+  <div class="cell">Bounty</div>
+  <div class="cell">Height</div>
+  <div class="cell">Origin</div>
+  <div class="cell">First Arc</div>
+</div>
+
+<div id="guesses" class="grid-body"></div>
+
+
+    <section class="footer">
+      <p>Yesterday's character was <span id="yesterday-character">???</span></p>
+      <div class="other-games">
+        <!-- Add other game icons with names -->
+      </div>
+    </section>
+  </div>
+
+  <script type="module" src="game.js"></script>
+</body>
+</html>
