@@ -1,10 +1,14 @@
 {
   "compilerOptions": {
-    "target": "ES2015",          // or "ES6" (same)
-    "lib": ["ES2015", "DOM"],    // includes Promise, Array.find, and DOM APIs
-    "module": "ESNext",          // or your module system
-    "strict": true,              // optional, but recommended
-    "esModuleInterop": true,     // optional, for import compatibility
-    "skipLibCheck": true         // optional, speeds up build
-  }
+    "target": "es6",               // modern JS version
+    "module": "es2020",            // module system for browsers
+    "lib": ["dom", "es6"],         // include DOM & ES6 libs (needed for Promise, find, etc.)
+    "moduleResolution": "node",
+    "strict": true,
+    "esModuleInterop": true,
+    "forceConsistentCasingInFileNames": true,
+    "outDir": "./dist",            // output folder for JS files
+    "skipLibCheck": true
+  },
+  "include": ["onepiecedle/game.ts"]
 }

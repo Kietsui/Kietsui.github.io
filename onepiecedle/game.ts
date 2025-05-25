@@ -18,6 +18,7 @@ type Character = {
 
 let characters: Character[] = [];
 let targetCharacter: Character;
+let guessedNames = new Set<string>();
 
 async function loadCharacters() {
   try {
@@ -27,13 +28,15 @@ async function loadCharacters() {
     characters = data.characters;
     pickRandomCharacter();
   } catch (error) {
-    alert('Error loading character data: ' + console.log(error));
+    alert('Error loading character data: ' + error);
+    console.error(error);
   }
 }
 
 function pickRandomCharacter() {
   const idx = Math.floor(Math.random() * characters.length);
   targetCharacter = characters[idx];
+  console.log('Target character selected:', targetCharacter.name); // For debugging
 }
 
 function compareAttributes(guess: Character, answer: Character): Record<string, string> {
@@ -54,14 +57,28 @@ function arraysEqual(a: string[], b: string[]) {
 }
 
 function handleGuess(name: string) {
-  const guess = characters.find(c => c.name.toLowerCase() === name.trim().toLowerCase());
+  const normalized = name.trim().toLowerCase();
+
+  if (guessedNames.has(normalized)) {
+    alert("You already guessed that character!");
+    return;
+  }
+
+  const guess = characters.find(c => c.name.toLowerCase() === normalized);
   if (!guess) {
     alert("Character not found!");
     return;
   }
 
+  guessedNames.add(normalized);
+
   const comparison = compareAttributes(guess, targetCharacter);
   renderComparisonRow(guess, comparison);
+
+  if (guess.name === targetCharacter.name) {
+    alert(`🎉 Congratulations! You guessed the character correctly: ${targetCharacter.name}`);
+    // Optionally reset game or disable input here
+  }
 }
 
 function renderComparisonRow(character: Character, comparison: Record<string, string>) {
@@ -73,22 +90,92 @@ function renderComparisonRow(character: Character, comparison: Record<string, st
     <div class="cell ${comparison.gender}">${character.gender}</div>
     <div class="cell ${comparison.affiliation}">${character.affiliation}</div>
     <div class="cell ${comparison.fruit}">${character.devilFruit?.name || "None"}</div>
-    <div class="cell ${comparison.haki}">${character.haki.join(", ") || "None"}</div>
+    <div class="cell ${comparison.haki}">${character.haki.length ? character.haki.join(", ") : "None"}</div>
     <div class="cell ${comparison.bounty}">₿ ${character.bounty.toLocaleString()}</div>
     <div class="cell ${comparison.height}">${character.height} cm</div>
     <div class="cell ${comparison.origin}">${character.origin}</div>
     <div class="cell ${comparison.arc}">${character.arc}</div>
   `;
-  
+
   document.getElementById("guesses")?.appendChild(row);
 }
 
-// Load character data on page load and setup event listener
+function createDropdown(matches: Character[]) {
+  const dropdown = document.getElementById("autocomplete-list");
+  if (!dropdown) return;
+
+  dropdown.innerHTML = ""; // Clear previous suggestions
+
+  matches.forEach(character => {
+    const item = document.createElement("div");
+    item.className = "autocomplete-item";
+    item.textContent = character.name;
+    item.addEventListener("click", () => {
+      const input = document.getElementById("guess-input") as HTMLInputElement;
+      input.value = character.name;
+      dropdown.innerHTML = ""; // Clear dropdown after selection
+      input.focus();
+    });
+    dropdown.appendChild(item);
+  });
+}
+
 window.addEventListener('DOMContentLoaded', () => {
   loadCharacters();
 
-  document.getElementById("submit-guess")?.addEventListener("click", () => {
-    const val = (document.getElementById("guess-input") as HTMLInputElement).value;
-    handleGuess(val);
+  const input = document.getElementById("guess-input") as HTMLInputElement;
+  const submitBtn = document.getElementById("submit-guess");
+
+  // Submit guess on button click
+  submitBtn?.addEventListener("click", () => {
+    if (input.value.trim() !== "") {
+      handleGuess(input.value);
+      input.value = "";
+      clearDropdown();
+    }
+  });
+
+  // Submit guess on Enter key press
+  input.addEventListener("keydown", (e) => {
+    if (e.key === "Enter") {
+      e.preventDefault();
+      if (input.value.trim() !== "") {
+        handleGuess(input.value);
+        input.value = "";
+        clearDropdown();
+      }
+    }
+  });
+
+  // Show dropdown suggestions on input
+  input.addEventListener("input", () => {
+    const val = input.value.trim().toLowerCase();
+    if (!val) {
+      clearDropdown();
+      return;
+    }
+
+    const matches = characters.filter(c =>
+      c.name.toLowerCase().includes(val)
+    ).slice(0, 10); // limit to 10 suggestions
+
+    if (matches.length > 0) {
+      createDropdown(matches);
+    } else {
+      clearDropdown();
+    }
+  });
+
+  // Close dropdown if clicked outside input or dropdown
+  document.addEventListener("click", (e) => {
+    const target = e.target as HTMLElement;
+    if (target !== input && !document.getElementById("autocomplete-list")?.contains(target)) {
+      clearDropdown();
+    }
   });
 });
+
+function clearDropdown() {
+  const dropdown = document.getElementById("autocomplete-list");
+  if (dropdown) dropdown.innerHTML = "";
+}
