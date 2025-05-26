@@ -21,17 +21,19 @@ let targetCharacter: Character;
 let guessedNames = new Set<string>();
 
 async function loadCharacters() {
-  try {
-    const response = await fetch('./onepiecedle/data/CharactersOnePiece.json');
-    if (!response.ok) throw new Error('Failed to load characters JSON');
-    const data = await response.json();
-    characters = data.characters;
-    pickRandomCharacter();
-  } catch (error) {
-    alert('Error loading character data: ' + error);
-    console.error(error);
-  }
+    try {
+        const response = await fetch('./data/CharactersOnePiece.json');
+        if (!response.ok)
+            throw new Error('Failed to load characters JSON');
+        const data = await response.json();
+        characters = data.characters;
+        pickRandomCharacter();
+    } catch (error) {
+        alert('Error loading character data: ' + error);
+        console.error(error);
+    }
 }
+
 
 function pickRandomCharacter() {
   const idx = Math.floor(Math.random() * characters.length);

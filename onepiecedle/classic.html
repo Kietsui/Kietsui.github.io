@@ -4,7 +4,11 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <link href="https://fonts.googleapis.com/css2?family=Bangers&display=swap" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100..700;1,100..700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="classic.css" />
+  <link rel="icon" type="image/x-icon" href="assets/opicon.ico">
   <title>Onepiecedle</title>
 </head>
 <body>
@@ -21,36 +25,35 @@
       </div>
     </header>
 
-    <div class="input-area">
-  <input id="guess-input" type="text" autocomplete="off" />
-<div id="autocomplete-list" class="autocomplete-items"></div>
-<button id="submit-guess">Guess</button>
+    <div class="input-area autocomplete-container">
+      <input id="guess-input" type="text" autocomplete="off" />
+      <div id="autocomplete-list" class="autocomplete-items"></div>
+      <button id="submit-guess">Guess</button>
+    </div>
 
-</div>
+    <div class="grid-container">
+      <div class="grid-header">
+        <div class="cell">Name</div>
+        <div class="cell">Gender</div>
+        <div class="cell">Affiliation</div>
+        <div class="cell">Devil Fruit</div>
+        <div class="cell">Haki</div>
+        <div class="cell">Bounty</div>
+        <div class="cell">Height</div>
+        <div class="cell">Origin</div>
+        <div class="cell">First Arc</div>
+      </div>
 
-<div class="grid-header">
-  <div class="cell">Name</div>
-  <div class="cell">Gender</div>
-  <div class="cell">Affiliation</div>
-  <div class="cell">Devil Fruit</div>
-  <div class="cell">Haki</div>
-  <div class="cell">Bounty</div>
-  <div class="cell">Height</div>
-  <div class="cell">Origin</div>
-  <div class="cell">First Arc</div>
-</div>
-
-<div id="guesses" class="grid-body"></div>
-
+      <div id="guesses" class="grid-body"></div>
+    </div>
 
     <section class="footer">
-      <p>Yesterday's character was <span id="yesterday-character">???</span></p>
-      <div class="other-games">
-        <!-- Add other game icons with names -->
-      </div>
+      <p>Last character was <span id="yesterday-character">???</span></p>
+      <!-- Play Again button will be injected here -->
     </section>
   </div>
 
-  <script type="module" src="game.js"></script>
+
+  <script type="module" src="../dist/game.js"></script>
 </body>
 </html>

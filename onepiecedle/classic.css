@@ -1,7 +1,7 @@
 body, html {
   margin: 0;
   padding: 0;
-  font-family: 'Bangers', cursive;
+  font-family: "Josefin Sans", sans-serif;
   color: #222;
   overflow-x: hidden;
 }
@@ -19,7 +19,7 @@ body, html {
 .container {
   text-align: center;
   padding-top: 3rem;
-  color: #2c2c2c;
+  color: #000000;
 }
 
 .title-img {
@@ -40,12 +40,19 @@ body, html {
   height: 50px;
 }
 
-.input-area {
-  background: rgba(255, 255, 255, 0.85);
-  display: inline-block;
+/* Input + Autocomplete */
+.input-area.autocomplete-container {
+  position: relative;
+  background: rgba(255, 255, 255, 0.9);
+  display: inline-flex;
+  flex-wrap: wrap;
   padding: 1rem 2rem;
   border-radius: 10px;
-  box-shadow: 0 0 10px rgba(0,0,0,0.2);
+  box-shadow: 0 0 10px rgba(0,0,0,0.3);
+  margin-bottom: 2rem;
+  display: flex;
+  align-items: center;   /* vertical centering */
+  justify-content: center; /* horizontal centering */
 }
 
 #guess-input {
@@ -53,22 +60,31 @@ body, html {
   font-size: 1.2rem;
   width: 300px;
   margin-right: 0.5rem;
+  border-radius: 5px;
+  border: 1px solid #ccc;
 }
 
 #submit-guess {
   padding: 0.5rem 1rem;
   font-size: 1.2rem;
   cursor: pointer;
+  border: none;
+  border-radius: 5px;
+  background-color: #ffcc00;
+  color: #000;
 }
-.autocomplete-items {
-  border: 1px solid #d4d4d4;
-  border-top: none;
-  max-height: 150px;
-  overflow-y: auto;
+
+#autocomplete-list {
   position: absolute;
-  background-color: white;
-  z-index: 99;
-  width: 100%;
+  top: 100%; /* directly below input */
+  left: 0;
+  right: 0;
+  margin-top: -1px;
+  background-color: #ccc;
+  z-index: 1000;
+  border: 1px solid #ccc;
+  max-height: 200px;
+  overflow-y: auto;
 }
 
 .autocomplete-item {
@@ -80,44 +96,124 @@ body, html {
   background-color: #e9e9e9;
 }
 
+/* Grid Display */
+.grid-header, .character-row {
+  display: grid;
+  grid-template-columns: repeat(9, 1fr);
+  gap: 2px;
+}
+
+.cell {
+  padding: 10px;
+  border: 1px solid #555;
+  text-align: center;
+  background-color: rgba(0, 0, 0, 0.7);
+  color: #fff;
+  font-weight: bold;
+  margin-bottom: 7px;
+}
+
+.cell.green {
+  background-color: #4CAF50;
+  color: white;
+  text-align: center;
+  display: flex;
+  align-items: center;   /* vertical centering */
+  justify-content: center; /* horizontal centering */
+}
+.cell.red {
+  background-color: #f44336;
+  color: white;
+  text-align: center;
+  display: flex;
+  align-items: center;   /* vertical centering */
+  justify-content: center; /* horizontal centering */
+}
+.cell.red-up {
+  background-color: #f44336; /* red - guess is too high */
+  color: white;
+  text-align: center;
+  display: flex;
+  align-items: center;   /* vertical centering */
+  justify-content: center; /* horizontal centering */
+}
+.cell.red-down {
+  background-color: #f44336; /* red - guess is too low */
+  color: white;
+  text-align: center;
+  display: flex;
+  align-items: center;   /* vertical centering */
+  justify-content: center; /* horizontal centering */
+}
+.cell.yellow {
+  background-color: #d4c32a;
+  color: #ffffff;
+  text-align: center;
+  display: flex;
+  align-items: center;   /* vertical centering */
+  justify-content: center; /* horizontal centering */
+}
+
+
+
+.cell.name {
+  color: #fff;
+}
+
 .footer {
   margin-top: 3rem;
+  color: #fff;
 }
-body {
-      font-family: 'Bangers', cursive;
-      background-image: url('background.jpg');
-      background-size: cover;
-      background-repeat: no-repeat;
-      color: white;
-      padding: 20px;
-    }
-    .input-area {
-      display: flex;
-      gap: 10px;
-      margin-bottom: 20px;
-    }
-    input[type="text"] {
-      padding: 10px;
-      flex: 1;
-      font-size: 18px;
-    }
-    button {
-      padding: 10px 20px;
-      font-size: 18px;
-      cursor: pointer;
-    }
-    .grid-header, .character-row {
-      display: grid;
-      grid-template-columns: repeat(9, 1fr);
-      gap: 2px;
-    }
-    .cell {
-      padding: 10px;
-      border: 1px solid #ccc;
-      text-align: center;
-      background-color: rgba(0,0,0,0.6);
-    }
-    .green { background-color: #4CAF50; color: white; }
-    .red { background-color: #f44336; color: white; }
-    .red-up::after { content: " ⬆️"; }
-    .red-down::after { content: " ⬇️"; }
+.grid-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 1rem;
+}
+
+.grid-body {
+  margin-top: 1rem;
+}
+
+/* Guess feedback styling */
+.cell.name {
+  font-weight: bold;
+}
+.cell.bounty {
+    font-size: 14px;
+}
+
+/* Footer styling */
+.footer {
+  padding-top: 2rem;
+  text-align: center;
+  color: #fff;
+  background-color: #ccc;
+  width: 400px;
+  padding-bottom: 50px;
+  align-items: center;
+  border-radius: 16px;
+  margin: auto;
+  margin-top: 300px;
+  font-size: 20px;
+}
+
+.last-character {
+  padding-top: 1rem;
+  font-size: 1.2rem;
+}
+.autocomplete-container {
+  width: 100%;
+  max-width: 500px;
+  margin: 0 auto;
+  position: relative;
+}
+.play-again-btn {
+  margin-top: 1rem;
+  padding: 10px 20px;
+  font-size: 1.2rem;
+  cursor: pointer;
+  background-color: #4CAF50;
+  color: white;
+  border: none;
+  border-radius: 6px;
+}
