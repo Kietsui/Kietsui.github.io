@@ -2,6 +2,38 @@ let characters = [];
 let targetCharacter;
 let guessedNames = new Set();
 
+const arcOrder = [
+  "Romance Dawn",
+  "Orange Town",
+  "Syrup Village",
+  "Baratie",
+  "Arlong Park",
+  "Loguetown",
+  "Reverse Mountain",
+  "Whiskey Peak",
+  "Little Garden",
+  "Drum Island",
+  "Alabasta",
+  "Jaya",
+  "Skypiea",
+  "Water 7",
+  "Enies Lobby",
+  "Thriller Bark",
+  "Sabaody Archipelago",
+  "Amazon Lily",
+  "Impel Down",
+  "Marineford",
+  "Post-War",
+  "Fishman Island",
+  "Punk Hazard",
+  "Dressrosa",
+  "Zou",
+  "Whole Cake Island",
+  "Wano Country",
+  "Reverie",
+  "Egghead",
+];
+
 async function loadCharacters() {
   try {
     const response = await fetch('./data/CharactersOnePiece.json');
@@ -26,45 +58,34 @@ function arraysEqual(a, b) {
 }
 
 function compareAttributes(guess, answer) {
-  const guessType = guess.devilFruit?.type || "None";
-  const answerType = answer.devilFruit?.type || "None";
+  const guessArcIndex = arcOrder.indexOf(guess.arc);
+  const answerArcIndex = arcOrder.indexOf(answer.arc);
 
-  let fruitColor = "red";
-  if (guessType === answerType) {
-    fruitColor = "green";
-  } else if (
-    (guessType.includes("Zoan") && answerType.includes("Zoan")) &&
-    guessType !== answerType
-  ) {
-    fruitColor = "yellow";
-  }
+  let arcComparison = "red"; // default to red if arcs not found or different
 
-  const guessHaki = new Set(guess.haki.map(h => h.toLowerCase()));
-  const answerHaki = new Set(answer.haki.map(h => h.toLowerCase()));
-
-  const intersection = [...guessHaki].filter(h => answerHaki.has(h));
-  let hakiColor = "red";
-
-  if (arraysEqual(guessHaki, answerHaki)) {
-    hakiColor = "green";
-  } else if (intersection.length > 0) {
-    hakiColor = "yellow"; // Partial match
+  if (guess.arc === answer.arc) {
+    arcComparison = "green";
+  } else if (guessArcIndex !== -1 && answerArcIndex !== -1) {
+    if (answerArcIndex > guessArcIndex) {
+      arcComparison = "red-up";   // answer arc is later (higher index)
+    } else if (answerArcIndex < guessArcIndex) {
+      arcComparison = "red-down"; // answer arc is earlier (lower index)
+    }
   }
 
   return {
+    // other attributes...
     name: guess.name === answer.name ? "green" : "red",
     gender: guess.gender === answer.gender ? "green" : "red",
     affiliation: guess.affiliation === answer.affiliation ? "green" : "red",
     origin: guess.origin.trim().toLowerCase() === answer.origin.trim().toLowerCase() ? "green" : "red",
-    arc: guess.arc === answer.arc ? "green" : "red",
+    arc: arcComparison,
     bounty: guess.bounty === answer.bounty ? "green" : guess.bounty > answer.bounty ? "red-down" : "red-up",
     height: guess.height === answer.height ? "green" : guess.height > answer.height ? "red-down" : "red-up",
-    haki: hakiColor,
-    fruit: fruitColor
+    haki: (guess.haki.length === 0 && answer.haki.length === 0) || arraysEqual(guess.haki, answer.haki) ? "green" : "red",
+    fruit: ((guess.devilFruit?.type || "None") === (answer.devilFruit?.type || "None")) ? "green" : "red",
   };
 }
-
-
 
 
 
@@ -119,7 +140,11 @@ function renderComparisonRow(character, comparison) {
     <div class="cell bounty ${comparison.bounty}">₿ ${character.bounty.toLocaleString()} ${comparison.bounty.includes('red') ? (comparison.bounty === 'red-up' ? '↑' : '↓') : ''}</div>
     <div class="cell ${comparison.height}">${character.height} cm ${comparison.height.includes('red') ? (comparison.height === 'red-up' ? '↑' : '↓') : ''}</div>
     <div class="cell ${comparison.origin}">${character.origin}</div>
-    <div class="cell ${comparison.arc}">${character.arc}</div>
+    <div class="cell ${comparison.arc}">
+      ${character.arc} 
+      ${comparison.arc.includes('red') ? (comparison.arc === 'red-up' ? '↑' : '↓') : ''}
+    </div>
+
   `;
 
   const guessesContainer = document.getElementById("guesses");

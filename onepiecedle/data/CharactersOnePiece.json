@@ -7,7 +7,7 @@
       "gender": "Male",
       "affiliation": "Straw Hat Pirates",
       "devilFruit": {
-        "name": "Hito Hito No Mi, Model: Nika",
+        "name": "Hito Hito no Mi, Model: Nika",
         "type": "Mythical Zoan"
       },
       "haki": ["Armament", "Observation", "Conqueror"],
@@ -32,50 +32,1786 @@
       "Id": 3,
       "name": "Nami",
       "gender": "Female",
-      "origin": "East Blue",
-      "haki": [],
-      "devilFruit": null,
-      "bounty": 366000000,
-      "height": 170,
       "affiliation": "Straw Hat Pirates",
-      "arc": "Romance Dawn"
+      "devilFruit": null,
+      "haki": [],
+      "bounty": 66000000,
+      "height": 170,
+      "origin": "East Blue",
+      "arc": "Orange Town"
     },
     {
       "Id": 4,
-      "name": "Sanji",
-      "gender": "Male",
-      "origin": "North Blue",
-      "haki": ["Armament", "Observation"],
-      "devilFruit": null,
-      "bounty": 1032000000,
-      "height": 180,
-      "affiliation": "Straw Hat Pirates"
+      "name": "Nico Robin",
+      "gender": "Female",
+      "affiliation": "Straw Hat Pirates",
+      "devilFruit": {
+        "name": "Hana Hana no Mi",
+        "type": "Paramecia"
+      },
+      "haki": [],
+      "bounty": 130000000,
+      "height": 188,
+      "origin": "West Blue",
+      "arc": "Whisky Peak"
     },
     {
       "Id": 5,
-      "name": "Tony Tony Chopper",
+      "name": "Franky",
       "gender": "Male",
-      "origin": "Grand Line",
+      "affiliation": "Straw Hat Pirates",
+      "devilFruit": null,
       "haki": [],
-      "devilFruit": {
-        "name": "Hito Hito No Mi",
-        "type": "Zoan"
-      },
-      "bounty": 1000,
-      "affiliation": "Straw Hat Pirates"
+      "bounty": 94000000,
+      "height": 240,
+      "origin": "South Blue",
+      "arc": "Water 7"
     },
     {
       "Id": 6,
-      "name": "Nico Robin",
-      "gender": "Female",
-      "origin": "West Blue",
-      "haki": [],
+      "name": "Vinsmoke Sanji",
+      "gender": "Male",
+      "affiliation": "Straw Hat Pirates",
+      "devilFruit": null,
+      "haki": ["Armament", "Observation"],
+      "bounty": 330000000,
+      "height": 180,
+      "origin": "North Blue",
+      "arc": "Baratie"
+    },
+    {
+      "Id": 7,
+      "name": "Tony Tony Chopper",
+      "gender": "Male",
+      "affiliation": "Straw Hat Pirates",
       "devilFruit": {
-        "name": "Hana Hana No Mi",
+        "name": "Hito Hito no Mi",
+        "type": "Zoan"
+      },
+      "haki": [],
+      "bounty": 100,
+      "height": 90,
+      "origin": "Grand Line",
+      "arc": "Drum Island"
+    },
+    {
+      "Id": 8,
+      "name": "Brook",
+      "gender": "Male",
+      "affiliation": "Straw Hat Pirates",
+      "devilFruit": {
+        "name": "Yomi Yomi no Mi",
         "type": "Paramecia"
       },
-      "bounty": 79000000,
-      "affiliation": "Straw Hat Pirates"
-    }
-  ]
+      "haki": [],
+      "bounty": 83000000,
+      "height": 277,
+      "origin": "West Blue",
+      "arc": "Thriller Bark"
+    },
+    {
+      "Id": 9,
+      "name": "Jinbe",
+      "gender": "Male",
+      "affiliation": "Straw Hat Pirates",
+      "devilFruit": null,
+      "haki": ["Armament", "Observation"],
+      "bounty": 438000000,
+      "height": 301,
+      "origin": "Grand Line",
+      "arc": "Impel Down"
+    },
+    {
+      "Id": 10,
+      "name": "Charlotte Linlin",
+      "gender": "Female",
+      "affiliation": "Big Mom Pirates",
+      "devilFruit": {
+        "name": "Soru Soru no Mi",
+        "type": "Paramecia"
+      },
+      "haki": ["Armament", "Observation", "Conqueror"],
+      "bounty": 4388000000,
+      "height": 880,
+      "origin": "Elbaf",
+      "arc": "Whole Cake Island"
+    },
+    {
+      "Id": 11,
+      "name": "Charlotte Katakuri",
+      "gender": "Male",
+      "affiliation": "Big Mom Pirates",
+      "devilFruit": {
+        "name": "Mochi Mochi no Mi",
+        "type": "Special Paramecia"
+      },
+      "haki": ["Armament", "Observation", "Conqueror"],
+      "bounty": 1057000000,
+      "height": 509,
+      "origin": "Totto Land",
+      "arc": "Whole Cake Island"
+    },
+    {
+      "Id": 12,
+      "name": "Charlotte Smoothie",
+      "gender": "Female",
+      "affiliation": "Big Mom Pirates",
+      "devilFruit": {
+        "name": "Shibo Shibo no Mi",
+        "type": "Paramecia"
+      },
+      "haki": ["Armament", "Observation"],
+      "bounty": 932000000,
+      "height": 464,
+      "origin": "Totto Land",
+      "arc": "Whole Cake Island"
+    },
+    {
+      "Id": 13,
+      "name": "Charlotte Cracker",
+      "gender": "Male",
+      "affiliation": "Big Mom Pirates",
+      "devilFruit": {
+        "name": "Bisu Bisu no Mi",
+        "type": "Paramecia"
+      },
+      "haki": ["Armament"],
+      "bounty": 860000000,
+      "height": 307,
+      "origin": "Totto Land",
+      "arc": "Whole Cake Island"
+    },
+    {
+      "Id": 14,
+      "name": "Charlotte Perospero",
+      "gender": "Male",
+      "affiliation": "Big Mom Pirates",
+      "devilFruit": {
+        "name": "Pero Pero no Mi",
+        "type": "Paramecia"
+      },
+      "haki": ["Armament"],
+      "bounty": 700000000,
+      "height": 333,
+      "origin": "Totto Land",
+      "arc": "Whole Cake Island"
+    },
+    {
+      "Id": 15,
+      "name": "Charlotte Daifuku",
+      "gender": "Male",
+      "affiliation": "Big Mom Pirates",
+      "devilFruit": {
+        "name": "Hoya Hoya no Mi",
+        "type": "Paramecia"
+      },
+      "haki": ["Armament"],
+      "bounty": 300000000,
+      "height": 489,
+      "origin": "Totto Land",
+      "arc": "Whole Cake Island"
+    },
+    {
+      "Id": 16,
+      "name": "Charlotte Oven",
+      "gender": "Male",
+      "affiliation": "Big Mom Pirates",
+      "devilFruit": {
+        "name": "Netsu Netsu no Mi",
+        "type": "Paramecia"
+      },
+      "haki": ["Armament"],
+      "bounty": 300000000,
+      "height": 492,
+      "origin": "Totto Land",
+      "arc": "Whole Cake Island"
+    },
+    {
+      "Id": 17,
+      "name": "Charlotte Brûlée",
+      "gender": "Female",
+      "affiliation": "Big Mom Pirates",
+      "devilFruit": {
+        "name": "Mira Mira no Mi",
+        "type": "Paramecia"
+      },
+      "haki": [],
+      "bounty": 0,
+      "height": 340,
+      "origin": "Totto Land",
+      "arc": "Whole Cake Island"
+    },
+    {
+      "Id": 18,
+      "name": "Charlotte Compote",
+      "gender": "Female",
+      "affiliation": "Big Mom Pirates",
+      "devilFruit": null,
+      "haki": [],
+      "bounty": 0,
+      "height": 0,
+      "origin": "Totto Land",
+      "arc": "Whole Cake Island"
+    },
+    {
+      "Id": 19,
+      "name": "Charlotte Pudding",
+      "gender": "Female",
+      "affiliation": "Big Mom Pirates",
+      "devilFruit": {
+        "name": "Memo Memo no Mi",
+        "type": "Paramecia"
+      },
+      "haki": [],
+      "bounty": 0,
+      "height": 166,
+      "origin": "Totto Land",
+      "arc": "Whole Cake Island"
+    },
+    {
+      "Id": 20,
+      "name": "Edward Newgate",
+      "gender": "Male",
+      "affiliation": "Whitebeard Pirates",
+      "devilFruit": {
+        "name": "Gura Gura no Mi",
+        "type": "Paramecia"
+      },
+      "haki": ["Armament", "Observation", "Conqueror"],
+      "bounty": 5046000000,
+      "height": 666,
+      "origin": "Sphinx",
+      "arc": "Marineford"
+    },
+    {
+      "Id": 21,
+      "name": "Marco",
+      "gender": "Male",
+      "affiliation": "Whitebeard Pirates",
+      "devilFruit": {
+        "name": "Tori Tori no Mi, Model: Phoenix",
+        "type": "Mythical Zoan"
+      },
+      "haki": ["Armament", "Observation"],
+      "bounty": 1374000000,
+      "height": 203,
+      "origin": "Grand Line",
+      "arc": "Marineford"
+    },
+    {
+      "Id": 22,
+      "name": "Portgas D. Ace",
+      "gender": "Male",
+      "affiliation": "Whitebeard Pirates",
+      "devilFruit": {
+        "name": "Mera Mera no Mi",
+        "type": "Logia"
+      },
+      "haki": ["Armament", "Observation", "Conqueror"],
+      "bounty": 550000000,
+      "height": 185,
+      "origin": "South Blue",
+      "arc": "Marineford"
+    },
+    {
+      "Id": 23,
+      "name": "Jozu",
+      "gender": "Male",
+      "affiliation": "Whitebeard Pirates",
+      "devilFruit": {
+        "name": "Kira Kira no Mi",
+        "type": "Paramecia"
+      },
+      "haki": ["Armament"],
+      "bounty": 1000000000,
+      "height": 503,
+      "origin": "Grand Line",
+      "arc": "Marineford"
+    },
+    {
+      "Id": 24,
+      "name": "Vista",
+      "gender": "Male",
+      "affiliation": "Whitebeard Pirates",
+      "devilFruit": null,
+      "haki": ["Armament", "Observation"],
+      "bounty": 660000000,
+      "height": 247,
+      "origin": "Grand Line",
+      "arc": "Marineford"
+    },
+    {
+      "Id": 25,
+      "name": "Blamenco",
+      "gender": "Male",
+      "affiliation": "Whitebeard Pirates",
+      "devilFruit": {
+        "name": "Poke Poke no Mi",
+        "type": "Paramecia"
+      },
+      "haki": [],
+      "bounty": 0,
+      "height": 180,
+      "origin": "Grand Line",
+      "arc": "Marineford"
+    },
+    {
+      "Id": 26,
+      "name": "Namur",
+      "gender": "Male",
+      "affiliation": "Whitebeard Pirates",
+      "devilFruit": null,
+      "haki": [],
+      "bounty": 0,
+      "height": 250,
+      "origin": "Fish-Man Island",
+      "arc": "Marineford"
+    },
+    {
+      "Id": 27,
+      "name": "Izou",
+      "gender": "Male",
+      "affiliation": "Whitebeard Pirates",
+      "devilFruit": null,
+      "haki": ["Armament", "Observation"],
+      "bounty": 510000000,
+      "height": 192,
+      "origin": "Grand Line",
+      "arc": "Marineford"
+    },
+    {
+      "Id": 30,
+      "name": "Marshall D. Teach",
+      "gender": "Male",
+      "affiliation": "Blackbeard Pirates",
+      "devilFruit": {
+        "name": "Yami Yami no Mi",
+        "type": "Logia"
+      },
+      "haki": ["Armament", "Observation"],
+      "bounty": 3996000000,
+      "height": 344,
+      "origin": "Grand Line",
+      "arc": "Marineford"
+    },
+    {
+      "Id": 31,
+      "name": "Jesus Burgess",
+      "gender": "Male",
+      "affiliation": "Blackbeard Pirates",
+      "devilFruit": {
+        "name": "Riki Riki no Mi",
+        "type": "Paramecia"
+      },
+      "haki": ["Armament"],
+      "bounty": 200000000,
+      "height": 355,
+      "origin": "South Blue",
+      "arc": "Dressrosa"
+    },
+    {
+      "Id": 32,
+      "name": "Shiryu",
+      "gender": "Male",
+      "affiliation": "Blackbeard Pirates",
+      "devilFruit": {
+        "name": "Suke Suke no Mi",
+        "type": "Paramecia"
+      },
+      "haki": ["Armament", "Observation"],
+      "bounty": 720000000,
+      "height": 340,
+      "origin": "Grand Line",
+      "arc": "Impel Down"
+    },
+    {
+      "Id": 33,
+      "name": "Van Augur",
+      "gender": "Male",
+      "affiliation": "Blackbeard Pirates",
+      "devilFruit": {
+        "name": "Wapu Wapu no Mi",
+        "type": "Paramecia"
+      },
+      "haki": ["Observation"],
+      "bounty": 640000000,
+      "height": 340,
+      "origin": "North Blue",
+      "arc": "Jaya"
+    },
+    {
+      "Id": 34,
+      "name": "Avalo Pizarro",
+      "gender": "Male",
+      "affiliation": "Blackbeard Pirates",
+      "devilFruit": {
+        "name": "Shima Shima no Mi",
+        "type": "Paramecia"
+      },
+      "haki": [],
+      "bounty": 380000000,
+      "height": 505,
+      "origin": "Grand Line",
+      "arc": "Impel Down"
+    },
+    {
+      "Id": 35,
+      "name": "Laffitte",
+      "gender": "Male",
+      "affiliation": "Blackbeard Pirates",
+      "devilFruit": null,
+      "haki": ["Observation"],
+      "bounty": 42200000,
+      "height": 340,
+      "origin": "West Blue",
+      "arc": "Jaya"
+    },
+    {
+      "Id": 36,
+      "name": "Catarina Devon",
+      "gender": "Female",
+      "affiliation": "Blackbeard Pirates",
+      "devilFruit": {
+        "name": "Inu Inu no Mi, Model: Kyubi no Kitsune",
+        "type": "Mythical Zoan"
+      },
+      "haki": [],
+      "bounty": 660000000,
+      "height": 361,
+      "origin": "Grand Line",
+      "arc": "Impel Down"
+    },
+    {
+      "Id": 37,
+      "name": "Sanjuan Wolf",
+      "gender": "Male",
+      "affiliation": "Blackbeard Pirates",
+      "devilFruit": {
+        "name": "Deka Deka no Mi",
+        "type": "Paramecia"
+      },
+      "haki": [],
+      "bounty": 500000000,
+      "height": 18000,
+      "origin": "West Blue",
+      "arc": "Impel Down"
+    },
+    {
+      "Id": 38,
+      "name": "Vasco Shot",
+      "gender": "Male",
+      "affiliation": "Blackbeard Pirates",
+      "devilFruit": {
+        "name": "Gabu Gabu no Mi",
+        "type": "Paramecia"
+      },
+      "haki": [],
+      "bounty": 380000000,
+      "height": 542,
+      "origin": "Grand Line",
+      "arc": "Impel Down"
+    },
+    {
+      "Id": 39,
+      "name": "Doc Q",
+      "gender": "Male",
+      "affiliation": "Blackbeard Pirates",
+      "devilFruit": {
+        "name": "Shiku Shiku no Mi",
+        "type": "Paramecia"
+      },
+      "haki": [],
+      "bounty": 72000000,
+      "height": 342,
+      "origin": "North Blue",
+      "arc": "Jaya"
+    },
+    {
+      "Id": 40,
+      "name": "Kuzan",
+      "gender": "Male",
+      "affiliation": "Blackbeard Pirates",
+      "devilFruit": {
+        "name": "Hie Hie no Mi",
+        "type": "Logia"
+      },
+      "haki": ["Armament", "Observation"],
+      "bounty": 2900000000,
+      "height": 298,
+      "origin": "South Blue",
+      "arc": "Punk Hazard"
+    },
+    {
+      "Id": 41,
+      "name": "Gol D. Roger",
+      "gender": "Male",
+      "affiliation": "Roger Pirates",
+      "devilFruit": null,
+      "haki": ["Armament", "Observation", "Conqueror"],
+      "bounty": 5564800000,
+      "height": 274,
+      "origin": "East Blue",
+      "arc": "Oden's Flashback"
+    },
+    {
+      "Id": 42,
+      "name": "Silvers Rayleigh",
+      "gender": "Male",
+      "affiliation": "Roger Pirates",
+      "devilFruit": null,
+      "haki": ["Armament", "Observation", "Conqueror"],
+      "bounty": 0,
+      "height": 188,
+      "origin": "Unknown",
+      "arc": "Sabaody Archipelago"
+    },
+    {
+      "Id": 43,
+      "name": "Scopper Gaban",
+      "gender": "Male",
+      "affiliation": "Roger Pirates",
+      "devilFruit": null,
+      "haki": ["Armament", "Observation"],
+      "bounty": 0,
+      "height": 195,
+      "origin": "Unknown",
+      "arc": "Oden's Flashback"
+    },
+    {
+      "Id": 44,
+      "name": "Crocus",
+      "gender": "Male",
+      "affiliation": "Roger Pirates",
+      "devilFruit": null,
+      "haki": [],
+      "bounty": 0,
+      "height": 185,
+      "origin": "Grand Line",
+      "arc": "Reverse Mountain"
+    },
+    {
+      "Id": 45,
+      "name": "Shanks",
+      "gender": "Male",
+      "affiliation": "Red-Hair Pirates",
+      "devilFruit": null,
+      "haki": ["Armament", "Observation", "Conqueror"],
+      "bounty": 4048900000,
+      "height": 199,
+      "origin": "West Blue",
+      "arc": "Romance Dawn"
+    },
+    {
+      "Id": 46,
+      "name": "Benn Beckman",
+      "gender": "Male",
+      "affiliation": "Red-Hair Pirates",
+      "devilFruit": null,
+      "haki": ["Armament", "Observation"],
+      "bounty": 0,
+      "height": 206,
+      "origin": "North Blue",
+      "arc": "Romance Dawn"
+    },
+    {
+      "Id": 47,
+      "name": "Lucky Roux",
+      "gender": "Male",
+      "affiliation": "Red-Hair Pirates",
+      "devilFruit": null,
+      "haki": ["Armament", "Observation"],
+      "bounty": 0,
+      "height": 241,
+      "origin": "Unknown",
+      "arc": "Romance Dawn"
+    },
+    {
+      "Id": 48,
+      "name": "Yasopp",
+      "gender": "Male",
+      "affiliation": "Red-Hair Pirates",
+      "devilFruit": null,
+      "haki": ["Observation"],
+      "bounty": 0,
+      "height": 183,
+      "origin": "East Blue",
+      "arc": "Romance Dawn"
+    },
+    {
+      "Id": 49,
+      "name": "Monkey D. Dragon",
+      "gender": "Male",
+      "affiliation": "Revolutionary Army",
+      "devilFruit": null,
+      "haki": ["Armament", "Observation"],
+      "bounty": 0,
+      "height": 256,
+      "origin": "East Blue",
+      "arc": "Loguetown"
+    },
+    {
+      "Id": 50,
+      "name": "Sabo",
+      "gender": "Male",
+      "affiliation": "Revolutionary Army",
+      "devilFruit": {
+        "name": "Mera Mera no Mi",
+        "type": "Logia"
+      },
+      "haki": ["Armament", "Observation"],
+      "bounty": 602000000,
+      "height": 187,
+      "origin": "East Blue",
+      "arc": "Dressrosa"
+    },
+    {
+      "Id": 51,
+      "name": "Emporio Ivankov",
+      "gender": "Male",
+      "affiliation": "Revolutionary Army",
+      "devilFruit": {
+        "name": "Horu Horu no Mi",
+        "type": "Paramecia"
+      },
+      "haki": [],
+      "bounty": 0,
+      "height": 251,
+      "origin": "Grand Line",
+      "arc": "Impel Down"
+    },
+    {
+      "Id": 52,
+      "name": "Karasu",
+      "gender": "Male",
+      "affiliation": "Revolutionary Army",
+      "devilFruit": {
+        "name": "Susu Susu no Mi",
+        "type": "Logia"
+      },
+      "haki": ["Armament", "Observation"],
+      "bounty": 0,
+      "height": 210,
+      "origin": "North Blue",
+      "arc": "Reverie"
+    },
+    {
+      "Id": 53,
+      "name": "Belo Betty",
+      "gender": "Female",
+      "affiliation": "Revolutionary Army",
+      "devilFruit": {
+        "name": "Kobu Kobu no Mi",
+        "type": "Paramecia"
+      },
+      "haki": ["Armament"],
+      "bounty": 0,
+      "height": 181,
+      "origin": "East Blue",
+      "arc": "Reverie"
+    },
+    {
+      "Id": 54,
+      "name": "Morley",
+      "gender": "Male",
+      "affiliation": "Revolutionary Army",
+      "devilFruit": {
+        "name": "Oshi Oshi no Mi",
+        "type": "Paramecia"
+      },
+      "haki": ["Armament"],
+      "bounty": 0,
+      "height": 612,
+      "origin": "West Blue",
+      "arc": "Reverie"
+    },
+    {
+      "Id": 56,
+      "name": "Inazuma",
+      "gender": "Male",
+      "affiliation": "Revolutionary Army",
+      "devilFruit": {
+        "name": "Choki Choki no Mi",
+        "type": "Paramecia"
+      },
+      "haki": [],
+      "bounty": 0,
+      "height": 179,
+      "origin": "South Blue",
+      "arc": "Impel Down"
+    },
+    {
+      "Id": 57,
+      "name": "Koala",
+      "gender": "Female",
+      "affiliation": "Revolutionary Army",
+      "devilFruit": null,
+      "haki": ["Armament"],
+      "bounty": 0,
+      "height": 160,
+      "origin": "Unknown",
+      "arc": "Fish-Man Island"
+    },
+    {
+      "Id": 58,
+      "name": "Hack",
+      "gender": "Male",
+      "affiliation": "Revolutionary Army",
+      "devilFruit": null,
+      "haki": ["Armament"],
+      "bounty": 0,
+      "height": 198,
+      "origin": "Fish-Man Island",
+      "arc": "Dressrosa"
+    },
+    {
+      "Id": 59,
+      "name": "Kozuki Oden",
+      "gender": "Male",
+      "affiliation": "Kozuki Family",
+      "devilFruit": null,
+      "haki": ["Armament", "Observation", "Conqueror"],
+      "bounty": 0,
+      "height": 382,
+      "origin": "Wano Country",
+      "arc": "Wano Country"
+    },
+    {
+      "Id": 60,
+      "name": "Kozuki Momonosuke",
+      "gender": "Male",
+      "affiliation": "Kozuki Family",
+      "devilFruit": {
+        "name": "Artificial Uo Uo no Mi, Model: Seiryu",
+        "type": "Mythical Zoan"
+      },
+      "haki": ["Observation", "Conqueror"],
+      "bounty": 0,
+      "height": 110,
+      "origin": "Wano Country",
+      "arc": "Punk Hazard"
+    },
+    {
+      "Id": 61,
+      "name": "Kozuki Hiyori",
+      "gender": "Female",
+      "affiliation": "Kozuki Family",
+      "devilFruit": null,
+      "haki": [],
+      "bounty": 0,
+      "height": 170,
+      "origin": "Wano Country",
+      "arc": "Wano Country"
+    },
+    {
+      "Id": 62,
+      "name": "Toki",
+      "gender": "Female",
+      "affiliation": "Kozuki Family",
+      "devilFruit": {
+        "name": "Toki Toki no Mi",
+        "type": "Paramecia"
+      },
+      "haki": [],
+      "bounty": 0,
+      "height": 170,
+      "origin": "Wano Country",
+      "arc": "Wano Country"
+    },
+    {
+      "Id": 63,
+      "name": "Buggy",
+      "gender": "Male",
+      "affiliation": "Buggy Pirates, Cross Guild",
+      "devilFruit": {
+        "name": "Bara Bara no Mi",
+        "type": "Paramecia"
+      },
+      "haki": [],
+      "bounty": 3180000000,
+      "height": 192,
+      "origin": "Grand Line",
+      "arc": "Orange Town"
+    },
+    {
+      "Id": 64,
+      "name": "Mohji",
+      "gender": "Male",
+      "affiliation": "Buggy Pirates",
+      "devilFruit": null,
+      "haki": [],
+      "bounty": 0,
+      "height": 195,
+      "origin": "East Blue",
+      "arc": "Orange Town"
+    },
+    {
+      "Id": 65,
+      "name": "Cabaji",
+      "gender": "Male",
+      "affiliation": "Buggy Pirates",
+      "devilFruit": null,
+      "haki": [],
+      "bounty": 0,
+      "height": 187,
+      "origin": "East Blue",
+      "arc": "Orange Town"
+    },
+    {
+      "Id": 66,
+      "name": "Alvida",
+      "gender": "Female",
+      "affiliation": "Buggy Pirates",
+      "devilFruit": {
+        "name": "Sube Sube no Mi",
+        "type": "Paramecia"
+      },
+      "haki": [],
+      "bounty": 5000000,
+      "height": 198,
+      "origin": "East Blue",
+      "arc": "Romance Dawn"
+    },
+    {
+      "Id": 67,
+      "name": "Galdino (Mr. 3)",
+      "gender": "Male",
+      "affiliation": "Buggy Pirates",
+      "devilFruit": {
+        "name": "Doru Doru no Mi",
+        "type": "Paramecia"
+      },
+      "haki": [],
+      "bounty": 24000000,
+      "height": 179,
+      "origin": "Grand Line",
+      "arc": "Little Garden"
+    },
+    {
+      "Id": 68,
+      "name": "Crocodile",
+      "gender": "Male",
+      "affiliation": "Cross Guild",
+      "devilFruit": {
+        "name": "Suna Suna no Mi",
+        "type": "Logia"
+      },
+      "haki": ["Armament", "Observation"],
+      "bounty": 1960000000,
+      "height": 253,
+      "origin": "Grand Line",
+      "arc": "Alabasta"
+    },
+    {
+      "Id": 70,
+      "name": "Mr. 1 (Daz Bonez)",
+      "gender": "Male",
+      "affiliation": "Baroque Works",
+      "devilFruit": {
+        "name": "Supa Supa no Mi",
+        "type": "Paramecia"
+      },
+      "haki": [],
+      "bounty": 75000000,
+      "height": 212,
+      "origin": "West Blue",
+      "arc": "Rainbase"
+    },
+    {
+      "Id": 71,
+      "name": "Miss Doublefinger",
+      "gender": "Female",
+      "affiliation": "Baroque Works",
+      "devilFruit": {
+        "name": "Toge Toge no Mi",
+        "type": "Paramecia"
+      },
+      "haki": [],
+      "bounty": 0,
+      "height": 204,
+      "origin": "Grand Line",
+      "arc": "Rainbase"
+    },
+    {
+      "Id": 72,
+      "name": "Mr. 2 Bon Clay",
+      "gender": "Male",
+      "affiliation": "Newkama Land",
+      "devilFruit": {
+        "name": "Mane Mane no Mi",
+        "type": "Paramecia"
+      },
+      "haki": [],
+      "bounty": 32000000,
+      "height": 238,
+      "origin": "South Blue",
+      "arc": "Little Garden"
+    },
+    {
+      "Id": 74,
+      "name": "Miss Goldenweek",
+      "gender": "Female",
+      "affiliation": "Baroque Works",
+      "devilFruit": null,
+      "haki": [],
+      "bounty": 0,
+      "height": 152,
+      "origin": "Grand Line",
+      "arc": "Little Garden"
+    },
+    {
+      "Id": 75,
+      "name": "Rob Lucci",
+      "gender": "Male",
+      "affiliation": "CP0",
+      "devilFruit": {
+        "name": "Neko Neko no Mi, Model: Leopard",
+        "type": "Zoan"
+      },
+      "haki": ["Armament", "Observation"],
+      "bounty": 0,
+      "height": 212,
+      "origin": "Grand Line",
+      "arc": "Enies Lobby"
+    },
+    {
+      "Id": 76,
+      "name": "Kaku",
+      "gender": "Male",
+      "affiliation": "CP0",
+      "devilFruit": {
+        "name": "Ushi Ushi no Mi, Model: Giraffe",
+        "type": "Zoan"
+      },
+      "haki": ["Armament", "Observation"],
+      "bounty": 0,
+      "height": 193,
+      "origin": "Grand Line",
+      "arc": "Enies Lobby"
+    },
+    {
+      "Id": 77,
+      "name": "Stussy",
+      "gender": "Female",
+      "affiliation": "CP0",
+      "devilFruit": {
+        "name": "Bat Bat no Mi, Model: Vampire",
+        "type": "Zoan"
+      },
+      "haki": ["Armament", "Observation"],
+      "bounty": 0,
+      "height": 179,
+      "origin": "North Blue",
+      "arc": "Egghead"
+    },
+    {
+      "Id": 78,
+      "name": "Blueno",
+      "gender": "Male",
+      "affiliation": "CP9",
+      "devilFruit": {
+        "name": "Doa Doa no Mi",
+        "type": "Paramecia"
+      },
+      "haki": [],
+      "bounty": 0,
+      "height": 212,
+      "origin": "Grand Line",
+      "arc": "Enies Lobby"
+    },
+    {
+      "Id": 79,
+      "name": "Kalifa",
+      "gender": "Female",
+      "affiliation": "CP9",
+      "devilFruit": {
+        "name": "Awa Awa no Mi",
+        "type": "Paramecia"
+      },
+      "haki": [],
+      "bounty": 0,
+      "height": 183,
+      "origin": "Grand Line",
+      "arc": "Enies Lobby"
+    },
+    {
+      "Id": 80,
+      "name": "Jabra",
+      "gender": "Male",
+      "affiliation": "CP9",
+      "devilFruit": {
+        "name": "Inu Inu no Mi, Model: Wolf",
+        "type": "Zoan"
+      },
+      "haki": [],
+      "bounty": 0,
+      "height": 212,
+      "origin": "Grand Line",
+      "arc": "Enies Lobby"
+    },
+    {
+      "Id": 81,
+      "name": "Funkfreed",
+      "gender": "Male",
+      "affiliation": "CP9",
+      "devilFruit": {
+        "name": "Zoan-type (Sword: Elephant Model)",
+        "type": "Zoan"
+      },
+      "haki": [],
+      "bounty": 0,
+      "height": 200,
+      "origin": "Grand Line",
+      "arc": "Enies Lobby"
+    },
+    {
+      "Id": 82,
+      "name": "Guernica",
+      "gender": "Male",
+      "affiliation": "CP0",
+      "devilFruit": null,
+      "haki": [],
+      "bounty": 0,
+      "height": 195,
+      "origin": "Grand Line",
+      "arc": "Wano"
+    },
+    {
+      "Id": 83,
+      "name": "Vinsmoke Judge",
+      "gender": "Male",
+      "affiliation": "Germa 66",
+      "devilFruit": null,
+      "haki": ["Armament"],
+      "bounty": 0,
+      "height": 198,
+      "origin": "North Blue",
+      "arc": "Whole Cake Island"
+    },
+    {
+      "Id": 84,
+      "name": "Vinsmoke Reiju",
+      "gender": "Female",
+      "affiliation": "Germa 66",
+      "devilFruit": null,
+      "haki": [],
+      "bounty": 0,
+      "height": 173,
+      "origin": "North Blue",
+      "arc": "Whole Cake Island"
+    },
+    {
+      "Id": 85,
+      "name": "Vinsmoke Ichiji",
+      "gender": "Male",
+      "affiliation": "Germa 66",
+      "devilFruit": null,
+      "haki": ["Armament"],
+      "bounty": 0,
+      "height": 186,
+      "origin": "North Blue",
+      "arc": "Whole Cake Island"
+    },
+    {
+      "Id": 86,
+      "name": "Vinsmoke Niji",
+      "gender": "Male",
+      "affiliation": "Germa 66",
+      "devilFruit": null,
+      "haki": [],
+      "bounty": 0,
+      "height": 185,
+      "origin": "North Blue",
+      "arc": "Whole Cake Island"
+    },
+    {
+      "Id": 87,
+      "name": "Vinsmoke Yonji",
+      "gender": "Male",
+      "affiliation": "Germa 66",
+      "devilFruit": null,
+      "haki": [],
+      "bounty": 0,
+      "height": 187,
+      "origin": "North Blue",
+      "arc": "Whole Cake Island"
+    },
+    {
+      "Id": 88,
+      "name": "Sakazuki (Akainu)",
+      "gender": "Male",
+      "affiliation": "Marines",
+      "devilFruit": {
+        "name": "Magu Magu no Mi",
+        "type": "Logia"
+      },
+      "haki": ["Armament", "Observation"],
+      "bounty": 0,
+      "height": 306,
+      "origin": "North Blue",
+      "arc": "Marineford"
+    },
+    {
+      "Id": 89,
+      "name": "Borsalino (Kizaru)",
+      "gender": "Male",
+      "affiliation": "Marines",
+      "devilFruit": {
+        "name": "Pika Pika no Mi",
+        "type": "Logia"
+      },
+      "haki": ["Armament", "Observation"],
+      "bounty": 0,
+      "height": 302,
+      "origin": "Grand Line",
+      "arc": "Sabaody Archipelago"
+    },
+    {
+      "Id": 90,
+      "name": "Issho (Fujitora)",
+      "gender": "Male",
+      "affiliation": "Marines",
+      "devilFruit": {
+        "name": "Zushi Zushi no Mi",
+        "type": "Paramecia"
+      },
+      "haki": ["Armament", "Observation"],
+      "bounty": 0,
+      "height": 270,
+      "origin": "Grand Line",
+      "arc": "Dressrosa"
+    },
+    {
+      "Id": 91,
+      "name": "Aramaki (Ryokugyu)",
+      "gender": "Male",
+      "affiliation": "Marines",
+      "devilFruit": {
+        "name": "Mori Mori no Mi",
+        "type": "Logia"
+      },
+      "haki": ["Armament", "Observation"],
+      "bounty": 0,
+      "height": 298,
+      "origin": "Grand Line",
+      "arc": "Wano Country"
+    },
+    {
+      "Id": 92,
+      "name": "Sengoku",
+      "gender": "Male",
+      "affiliation": "Marines",
+      "devilFruit": {
+        "name": "Hito Hito no Mi, Model: Daibutsu",
+        "type": "Mythical Zoan"
+      },
+      "haki": ["Armament", "Observation"],
+      "bounty": 0,
+      "height": 278,
+      "origin": "North Blue",
+      "arc": "Marineford"
+    },
+    {
+      "Id": 93,
+      "name": "Monkey D. Garp",
+      "gender": "Male",
+      "affiliation": "Marines",
+      "devilFruit": null,
+      "haki": ["Armament", "Observation", "Conqueror"],
+      "bounty": 0,
+      "height": 287,
+      "origin": "East Blue",
+      "arc": "Water 7"
+    },
+    {
+      "Id": 94,
+      "name": "Tsuru",
+      "gender": "Female",
+      "affiliation": "Marines",
+      "devilFruit": {
+        "name": "Woshu Woshu no Mi",
+        "type": "Paramecia"
+      },
+      "haki": ["Armament"],
+      "bounty": 0,
+      "height": 224,
+      "origin": "Grand Line",
+      "arc": "Marineford"
+    },
+    {
+      "Id": 95,
+      "name": "Smoker",
+      "gender": "Male",
+      "affiliation": "Marines",
+      "devilFruit": {
+        "name": "Moku Moku no Mi",
+        "type": "Logia"
+      },
+      "haki": ["Armament", "Observation"],
+      "bounty": 0,
+      "height": 209,
+      "origin": "Grand Line",
+      "arc": "Loguetown"
+    },
+    {
+      "Id": 96,
+      "name": "Koby",
+      "gender": "Male",
+      "affiliation": "Marines",
+      "devilFruit": null,
+      "haki": ["Armament, Observation"],
+      "bounty": 0,
+      "height": 167,
+      "origin": "East Blue",
+      "arc": "Romance Dawn"
+    },
+    {
+      "Id": 97,
+      "name": "Helmeppo",
+      "gender": "Male",
+      "affiliation": "Marines",
+      "devilFruit": null,
+      "haki": [],
+      "bounty": 0,
+      "height": 179,
+      "origin": "East Blue",
+      "arc": "Romance Dawn"
+    },
+    {
+    "Id": 98,
+    "name": "Donquixote Doflamingo",
+    "gender": "Male",
+    "affiliation": "Donquixote Pirates",
+    "devilFruit": {
+      "name": "Ito Ito no Mi",
+      "type": "Paramecia"
+    },
+    "haki": ["Armament", "Observation", "Conqueror"],
+    "bounty": 340000000,
+    "height": 305,
+    "origin": "Red Line",
+    "arc": "Jaya"
+  },
+  {
+    "Id": 99,
+    "name": "Trebol",
+    "gender": "Male",
+    "affiliation": "Donquixote Pirates",
+    "devilFruit": {
+      "name": "Beta Beta no Mi",
+      "type": "Paramecia"
+    },
+    "haki": [],
+    "bounty": 99000000,
+    "height": 251,
+    "origin": "North Blue",
+    "arc": "Dressrosa"
+  },
+  {
+    "Id": 100,
+    "name": "Diamante",
+    "gender": "Male",
+    "affiliation": "Donquixote Pirates",
+    "devilFruit": {
+      "name": "Hira Hira no Mi",
+      "type": "Paramecia"
+    },
+    "haki": [],
+    "bounty": 99000000,
+    "height": 525,
+    "origin": "North Blue",
+    "arc": "Dressrosa"
+  },
+  {
+    "Id": 101,
+    "name": "Pica",
+    "gender": "Male",
+    "affiliation": "Donquixote Pirates",
+    "devilFruit": {
+      "name": "Ishi Ishi no Mi",
+      "type": "Paramecia"
+    },
+    "haki": ["Armament"],
+    "bounty": 99000000,
+    "height": 5120,
+    "origin": "North Blue",
+    "arc": "Dressrosa"
+  },
+  {
+    "Id": 102,
+    "name": "Vergo",
+    "gender": "Male",
+    "affiliation": "Donquixote Pirates",
+    "devilFruit": null,
+    "haki": ["Armament", "Observation"],
+    "bounty": 0,
+    "height": 247,
+    "origin": "North Blue",
+    "arc": "Punk Hazard"
+  },
+  {
+    "Id": 103,
+    "name": "Sugar",
+    "gender": "Female",
+    "affiliation": "Donquixote Pirates",
+    "devilFruit": {
+      "name": "Hobi Hobi no Mi",
+      "type": "Paramecia"
+    },
+    "haki": [],
+    "bounty": 0,
+    "height": 340,
+    "origin": "North Blue",
+    "arc": "Dressrosa"
+  },
+  {
+    "Id": 104,
+    "name": "Baby 5",
+    "gender": "Female",
+    "affiliation": "Donquixote Pirates",
+    "devilFruit": {
+      "name": "Buki Buki no Mi",
+      "type": "Paramecia"
+    },
+    "haki": [],
+    "bounty": 0,
+    "height": 181,
+    "origin": "North Blue",
+    "arc": "Dressrosa"
+  },
+  {
+    "Id": 105,
+    "name": "Buffalo",
+    "gender": "Male",
+    "affiliation": "Donquixote Pirates",
+    "devilFruit": {
+      "name": "Guru Guru no Mi",
+      "type": "Paramecia"
+    },
+    "haki": [],
+    "bounty": 0,
+    "height": 342,
+    "origin": "North Blue",
+    "arc": "Dressrosa"
+  },
+  {
+    "Id": 106,
+    "name": "Lao G",
+    "gender": "Male",
+    "affiliation": "Donquixote Pirates",
+    "devilFruit": null,
+    "haki": [],
+    "bounty": 0,
+    "height": 150,
+    "origin": "North Blue",
+    "arc": "Dressrosa"
+  },
+  {
+    "Id": 107,
+    "name": "Jora",
+    "gender": "Female",
+    "affiliation": "Donquixote Pirates",
+    "devilFruit": {
+      "name": "Ato Ato no Mi",
+      "type": "Paramecia"
+    },
+    "haki": [],
+    "bounty": 0,
+    "height": 312,
+    "origin": "North Blue",
+    "arc": "Dressrosa"
+  },
+  {
+  "Id": 108,
+  "name": "Donquixote Rosinante",
+  "gender": "Male",
+  "affiliation": "Marine",
+  "devilFruit": {
+    "name": "Nagi Nagi no Mi",
+    "type": "Paramecia"
+  },
+  "haki": [],
+  "bounty": 0,
+  "height": 293,
+  "origin": "Red Line",
+  "arc": "Dressrosa"
+  },
+  {
+  "Id": 109,
+  "name": "Don Krieg",
+  "gender": "Male",
+  "affiliation": "Don Krieg Pirates",
+  "devilFruit": null,
+  "haki": [],
+  "bounty": 26000000,
+  "height": 245,
+  "origin": "East Blue",
+  "arc": "Baratie"
+  },
+  {
+    "Id": 110,
+    "name": "Gin",
+    "gender": "Male",
+    "affiliation": "Don Krieg Pirates",
+    "devilFruit": null,
+    "haki": [],
+    "bounty": 0,
+    "height": 193,
+    "origin": "East Blue",
+    "arc": "Baratie"
+  },
+  {
+  "Id": 113,
+  "name": "Trafalgar D. Water Law",
+  "gender": "Male",
+  "affiliation": "Heart Pirates",
+  "devilFruit": {
+    "name": "Ope Ope no Mi",
+    "type": "Paramecia"
+  },
+  "haki": ["Armament", "Observation"],
+  "bounty": 500000000,
+  "height": 181,
+  "origin": "North Blue",
+  "arc": "Sabaody Archipelago"
+  },
+  {
+    "Id": 114,
+    "name": "Eustass Kid",
+    "gender": "Male",
+    "affiliation": "Kid Pirates",
+    "devilFruit": {
+      "name": "Jiki Jiki no Mi",
+      "type": "Paramecia"
+    },
+    "haki": ["Armament", "Observation"],
+    "bounty": 470000000,
+    "height": 180,
+    "origin": "South Blue",
+    "arc": "Sabaody Archipelago"
+  },
+  {
+    "Id": 115,
+    "name": "Killer",
+    "gender": "Male",
+    "affiliation": "Kid Pirates",
+    "devilFruit": null,
+    "haki": ["Armament", "Observation"],
+    "bounty": 200000000,
+    "height": 185,
+    "origin": "South Blue",
+    "arc": "Sabaody Archipelago"
+  },
+  {
+    "Id": 116,
+    "name": "Scratchmen Apoo",
+    "gender": "Male",
+    "affiliation": "On Air Pirates",
+    "devilFruit": {
+      "name": "Oto Oto no Mi",
+      "type": "Paramecia"
+    },
+    "haki": ["Armament", "Observation"],
+    "bounty": 350000000,
+    "height": 256,
+    "origin": "South Blue",
+    "arc": "Sabaody Archipelago"
+  },
+  {
+    "Id": 117,
+    "name": "Capone Bege",
+    "gender": "Male",
+    "affiliation": "Fire Tank Pirates",
+    "devilFruit": {
+      "name": "Shiro Shiro no Mi",
+      "type": "Paramecia"
+    },
+    "haki": ["Armament", "Observation"],
+    "bounty": 300000000,
+    "height": 193,
+    "origin": "North Blue",
+    "arc": "Sabaody Archipelago"
+  },
+  {
+    "Id": 118,
+    "name": "Jewelry Bonney",
+    "gender": "Female",
+    "affiliation": "Bonney Pirates",
+    "devilFruit": {
+      "name": "Toshi Toshi no Mi",
+      "type": "Paramecia"
+    },
+    "haki": ["Armament"],
+    "bounty": 320000000,
+    "height": 174,
+    "origin": "Red Line",
+    "arc": "Sabaody Archipelago"
+  },
+  {
+    "Id": 119,
+    "name": "Urouge",
+    "gender": "Male",
+    "affiliation": "Fallen Monk Pirates",
+    "devilFruit": {
+      "name": "Unknown",
+      "type": "Paramecia"
+    },
+    "haki": ["Armament", "Observation"],
+    "bounty": 149000000,
+    "height": 206,
+    "origin": "Jaya",
+    "arc": "Sabaody Archipelago"
+  },
+  {
+  "Id": 120,
+  "name": "Kaido",
+  "gender": "Male",
+  "affiliation": "Beast Pirates",
+  "devilFruit": {
+    "name": "Uo Uo no Mi, Model: Seiryu",
+    "type": "Mythical Zoan"
+  },
+  "haki": ["Armament", "Observation", "Conqueror"],
+  "bounty": 4700000000,
+  "height": 710,
+  "origin": "Grand Line",
+  "arc": "Dressrosa"
+  },
+  {
+    "Id": 121,
+    "name": "King",
+    "gender": "Male",
+    "affiliation": "Beast Pirates",
+    "devilFruit": {
+      "name": "Ryu Ryu no Mi, Model: Pteranodon",
+      "type": "Ancient Zoan"
+    },
+    "haki": ["Armament", "Observation"],
+    "bounty": 1390000000,
+    "height": 613,
+    "origin": "Grand Line",
+    "arc": "Wano Country"
+  },
+  {
+    "Id": 122,
+    "name": "Queen",
+    "gender": "Male",
+    "affiliation": "Beast Pirates",
+    "devilFruit": {
+      "name": "Ryu Ryu no Mi, Model: Brachiosaurus",
+      "type": "Ancient Zoan"
+    },
+    "haki": ["Armament", "Observation"],
+    "bounty": 1320000000,
+    "height": 612,
+    "origin": "Grand Line",
+    "arc": "Wano Country"
+  },
+  {
+    "Id": 123,
+    "name": "Jack",
+    "gender": "Male",
+    "affiliation": "Beast Pirates",
+    "devilFruit": {
+      "name": "Zou Zou no Mi, Model: Mammoth",
+      "type": "Ancient Zoan"
+    },
+    "haki": ["Armament", "Observation"],
+    "bounty": 1000000000,
+    "height": 830,
+    "origin": "Grand Line",
+    "arc": "Zhou"
+  },
+  {
+    "Id": 124,
+    "name": "Who’s Who",
+    "gender": "Male",
+    "affiliation": "Beast Pirates",
+    "devilFruit": {
+      "name": "Neko Neko no Mi, Model: Saber Tiger",
+      "type": "Ancient Zoan"
+    },
+    "haki": ["Armament", "Observation"],
+    "bounty": 546000000,
+    "height": 336,
+    "origin": "North Blue",
+    "arc": "Wano Country"
+  },
+  {
+    "Id": 125,
+    "name": "X Drake",
+    "gender": "Male",
+    "affiliation": "Marines",
+    "devilFruit": {
+      "name": "Ryu Ryu no Mi, Model: Allosaurus",
+      "type": "Ancient Zoan"
+    },
+    "haki": ["Armament", "Observation"],
+    "bounty": 222000000,
+    "height": 233,
+    "origin": "North Blue",
+    "arc": "Sabaody Archipelago"
+  },
+  {
+    "Id": 126,
+    "name": "Page One",
+    "gender": "Male",
+    "affiliation": "Beast Pirates",
+    "devilFruit": {
+      "name": "Ryu Ryu no Mi, Model: Spinosaurus",
+      "type": "Ancient Zoan"
+    },
+    "haki": ["Armament", "Observation"],
+    "bounty": 290000000,
+    "height": 170,
+    "origin": "Grand Line",
+    "arc": "Wano Country"
+  },
+  {
+    "Id": 127,
+    "name": "Ulti",
+    "gender": "Female",
+    "affiliation": "Beast Pirates",
+    "devilFruit": {
+      "name": "Ryu Ryu no Mi, Model: Pachycephalosaurus",
+      "type": "Ancient Zoan"
+    },
+    "haki": ["Armament", "Observation"],
+    "bounty": 400000000,
+    "height": 173,
+    "origin": "Grand Line",
+    "arc": "Wano Country"
+  },
+  {
+  "Id": 128,
+  "name": "Kin'emon",
+  "gender": "Male",
+  "affiliation": "Kozuki Family",
+  "devilFruit": {
+    "name": "Fuku Fuku no Mi",
+    "type": "Paramecia"
+  },
+  "haki": ["Armament", "Observation"],
+  "bounty": 0,
+  "height": 295,
+  "origin": "Grand Line",
+  "arc": "Punk Hazard"
+  },
+  {
+    "Id": 129,
+    "name": "Kanjuro",
+    "gender": "Male",
+    "affiliation": "Kurozumi Family",
+    "devilFruit": {
+      "name": "Fude Fude no Mi",
+      "type": "Paramecia"
+    },
+    "haki": ["Armament", "Observation"],
+    "bounty": 0,
+    "height": 347,
+    "origin": "Unknown",
+    "arc": "Dressrosa"
+  },
+  {
+    "Id": 130,
+    "name": "Raizo",
+    "gender": "Male",
+    "affiliation": "Kozuki Family",
+    "devilFruit": {
+      "name": "Maki Maki no Mi",
+      "type": "Paramecia"
+    },
+    "haki": ["Armament", "Observation"],
+    "bounty": 0,
+    "height": 311,
+    "origin": "Grand Line",
+    "arc": "Zhou"
+  },
+  {
+    "Id": 131,
+    "name": "Kikunojo",
+    "gender": "Female",
+    "affiliation": "Kozuki Family",
+    "devilFruit": null,
+    "haki": ["Armament", "Observation"],
+    "bounty": 0,
+    "height": 287,
+    "origin": "Grand Line",
+    "arc": "Wano Country"
+  },
+  {
+    "Id": 132,
+    "name": "Denjiro",
+    "gender": "Male",
+    "affiliation": "Kozuki Family",
+    "devilFruit": null,
+    "haki": ["Armament", "Observation"],
+    "bounty": 0,
+    "height": 306,
+    "origin": "Grand Line",
+    "arc": "Wano Country"
+  },
+  {
+    "Id": 133,
+    "name": "Ashura Doji",
+    "gender": "Male",
+    "affiliation": "Kozuki Family",
+    "devilFruit": null,
+    "haki": ["Armament", "Observation"],
+    "bounty": 0,
+    "height": 544,
+    "origin": "Grand Line",
+    "arc": "Wano Country"
+  },
+  {
+    "Id": 134,
+    "name": "Inuarashi",
+    "gender": "Male",
+    "affiliation": "Mokomo Dukedom",
+    "devilFruit": null,
+    "haki": ["Armament", "Observation"],
+    "bounty": 0,
+    "height": 511,
+    "origin": "Grand Line",
+    "arc": "Zhou"
+  },
+  {
+    "Id": 135,
+    "name": "Nekomamushi",
+    "gender": "Male",
+    "affiliation": "Mokomo Dukedom",
+    "devilFruit": null,
+    "haki": ["Armament", "Observation"],
+    "bounty": 0,
+    "height": 522,
+    "origin": "Grand Line",
+    "arc": "Zhou"
+  },
+  {
+    "Id": 136,
+    "name": "Kawamatsu",
+    "gender": "Male",
+    "affiliation": "Kozuki Family",
+    "devilFruit": null,
+    "haki": ["Armament", "Observation"],
+    "bounty": 0,
+    "height": 271,
+    "origin": "Unknown",
+    "arc": "Wano Country"
+  },
+  {
+    "Id": 137,
+    "name": "Yamato",
+    "gender": "Female",
+    "affiliation": "Kozuki Family",
+    "devilFruit": {
+      "name": "Inu Inu no Mi, Model: Okuchi no Makami",
+      "type": "Mythical Zoan"
+    },
+    "haki": ["Armament", "Observation", "Conqueror"],
+    "bounty": 0,
+    "height": 263,
+    "origin":"Unknown",
+    "arc": "Wano Country"
+  }
+ ]
 }
